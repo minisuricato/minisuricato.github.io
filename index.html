@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Trabalho de Física II</title>
+
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <div class="data">
+        <p>Carga da cavidade interna (em nC)</p>
+        <div>
+            <input id="range1" type="range" class="input" name="vol" value="0" min="-50" max="50"/>
+            <input id="display1" class="input" type="number" value="0"/>
+        </div>
+
+        <p>Carga da cavidade externa (em nC)</p>
+        
+        <div>
+            <input id="range2" type="range" class="input" name="vol" value="" min="-50" max="50">
+            <input id="display2" class="input" type="number" value="0">
+        </div>
+
+        <button class="button" onclick="Calculate()">Calcular</button>
+    </div>
+    <div class="data">
+        <p>Carga da superfície interna</p>
+        <span class="result1"></span>
+        <p>Carga da superfície externa</p>
+        <span class="result2"></span>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
